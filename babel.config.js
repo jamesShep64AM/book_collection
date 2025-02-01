@@ -60,12 +60,7 @@ module.exports = function(api) {
           loose: true
         }
       ],
-      [
-        '@babel/plugin-transform-runtime',
-        {
-          helpers: false
-        }
-      ],
+      "@babel/plugin-proposal-private-methods",
       [
         '@babel/plugin-transform-regenerator',
         {
