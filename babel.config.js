@@ -77,7 +77,8 @@ module.exports = function(api) {
         '@babel/plugin-transform-regenerator',
         {
           async: false
-        }
+        },
+        '@babel/loader'
       ]
     ].filter(Boolean)
   }
