@@ -1,4 +1,5 @@
 const { environment } = require('@rails/webpacker')
+environment.config.delete('node')
 
 environment.loaders.append('babel', {
   test: /\.(js|jsx)$/,
