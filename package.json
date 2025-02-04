@@ -2,8 +2,8 @@
     "name": "test-app",
     "private": true,
     "scripts": {
-        "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-        "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build"
+        "build": "NODE_OPTIONS=--openssl-legacy-provider webpack build",
+        "heroku-postbuild": "NODE_OPTIONS=--openssl-legacy-provider webpack build"
     },
     "dependencies": {
         "@babel/plugin-proposal-private-methods": "^7.18.6",
