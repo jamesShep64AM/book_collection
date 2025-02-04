@@ -1,3 +1,1 @@
-web: bundle exec rails server -p ${PORT:-3000}
-release: npm install && bundle exec rails assets:precompile
-
+web: bundle exec rails server -p $PORT --binding=0.0.0.0
